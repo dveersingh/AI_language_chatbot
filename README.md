@@ -63,11 +63,30 @@ This is an **AI-powered language learning chatbot** that helps users practice a 
    pip install -r requirements.txt
    ```
 
-4. **Set Up API Key**
-   - Create a `.env` file in the root directory and add:
-     ```env
-     GOOGLE_API_KEY=your_gemini_api_key_here
-     ```
+4. Set up the **Google API Key** in Streamlit:
+   - **For Local Setup**:
+     1. Create a `.streamlit/secrets.toml` file in your project root.
+     2. Add the following content:
+        ```toml
+        [general]
+        GOOGLE_API_KEY = "your_actual_api_key"
+        ```
+     3. Alternatively, you can set it via environment variables:
+        ```sh
+        export GOOGLE_API_KEY=your_actual_api_key
+        ```
+        Or on Windows (PowerShell):
+        ```powershell
+        $env:GOOGLE_API_KEY="your_actual_api_key"
+        ```
+   - **For Streamlit Community Cloud**:
+     1. Go to **App Settings** → **Advanced Settings**.
+     2. Under **Secrets**, add:
+        ```
+        GOOGLE_API_KEY = your_actual_api_key
+        ```
+     3. Click **Save**.
+
 
 5. **Initialize Database**
    ```bash
