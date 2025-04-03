@@ -1,0 +1,32 @@
+# Ignore environment variables
+.env
+
+# Byte-compiled / cached
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs & Debug files
+*.log
+
+# Streamlit Cache
+.streamlit/
+
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# MacOS & Linux system files
+.DS_Store
+*.swp
